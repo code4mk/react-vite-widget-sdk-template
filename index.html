@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widget Development</title>
+    <link rel="stylesheet" href="/dist/sdk-widget.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans">
+    <!-- Hero Section -->
+    <header class="bg-gray-900 text-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">Mostafa Law House</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="#practice-areas" class="hover:text-blue-400 transition">Practice Areas</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                    <div id="sdk_widget_button" class="flex items-center space-x-2 border-2 border-transparent bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg px-2 py-1 hover:bg-none hover:border-gray-600 transition cursor-pointer bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+                      <p class="hover:text-blue-400 transition">Message Now</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+        <div class="container mx-auto px-6 py-24 text-center">
+            <h1 class="text-5xl font-bold mb-6">Expert Legal Solutions for Your Peace of Mind</h1>
+            <p class="text-xl mb-8 text-gray-300">Dedicated to providing exceptional legal services with integrity and professionalism</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+                Schedule a Consultation
+            </button>
+        </div>
+    </header>
+
+    <!-- Practice Areas -->
+    <section id="practice-areas" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Practice Areas</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold mb-4">Corporate Law</h3>
+                    <p class="text-gray-600">Expert guidance for businesses of all sizes</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold mb-4">Family Law</h3>
+                    <p class="text-gray-600">Compassionate support for family matters</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold mb-4">Real Estate</h3>
+                    <p class="text-gray-600">Comprehensive real estate legal services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8">About Mostafa Law House</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto text-center">
+                With over 20 years of experience, we've been serving our community with distinction and dedication. 
+                Our team of experienced attorneys is committed to delivering the highest quality legal representation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="flex flex-col items-center space-y-4 text-lg">
+                <p class="flex items-center"><span class="mr-3">📍</span> 123 Legal Avenue, City, State 12345</p>
+                <p class="flex items-center"><span class="mr-3">📞</span> (555) 123-4567</p>
+                <p class="flex items-center"><span class="mr-3">✉️</span> info@mostafalawhouse.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Original Scripts -->
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.addEventListener('load', () => {
+        window.initSdkWidget({
+          company_name: 'Mostafa Law Law House',
+          company_slug: 'mostafa-law-house',
+          additional_open_id: 'sdk_widget_button'
+        });
+      });
+    </script>
+  </body>
+</html> 
