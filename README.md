@@ -56,10 +56,13 @@ build/
 ```
 
 ---
+
 <div align="center">
+
 💼 **Want to build your own widget (sdk)?**  
 📧 [hiremostafa@gmail.com](mailto:hiremostafa@gmail.com)  
 🚀 Available for hire
+
 </div>
 
 
